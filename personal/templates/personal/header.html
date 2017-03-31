@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>申恒</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<link rel="stylesheet" href="{% static 'personal/css/materialize.min.css' %}" type="text/css"/>
+	<link rel="stylesheet" href="{% static 'personal/css/hovertitles.css' %}" type="text/css"/>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="http://picturebag.qiniudn.com/monokai.css">
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-96113519-1', 'auto');
+  		ga('send', 'pageview');
+
+	</script>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="b3m1Y-5iE8xWTbE8-uPC4l-ABY5p48xPd8FUXA7__TI" />	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+<div class="navbar-fixed">
+			<nav style="background-color:#423b3b">
+				<div class="nav-wrapper container">
+					<a href="/" class="brand-logo"><img class="img-responsive" style="width:50px; height;50px; margin-top:5px" src="/static/personal/img/mainlogowhitethick.png"></a>
+					<a href="#" data-activates="navsidebar" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+					<!--<div class="col-md-10 col-md-offset-2">-->
+					<ul class="col-md-10 col-md-offset-1 left hide-on-med-and-down">
+						
+			<li><a href="/">Home</a></li>
+			<li><a href="/blog/">Blog</a></li>
+			<li><a href="http://olxgfquub.bkt.clouddn.com/resume.pdf">Resume</a></li>
+			<li><a href="/">Donate</a></li>
+			<li><a href="/">Resouce</a></li>
+			<li><a href="/admin/">Admin</a></li>
+					</ul>
+			<ul class="side-nav" id="navsidebar" style="left: -250px;">
+						
+			<li><a href="/">Home</a></li>
+			<li><a href="/blog/">Blog</a></li>
+			<li><a href="http://olxgfquub.bkt.clouddn.com/resume.pdf">Resume</a></li>
+			<li><a href="/">Donate</a></li>
+			<li><a href="/">Resouce</a></li>
+			<li><a href="/admin/">Admin</a></li>
+			
+
+					</ul>
+			<!--</div>-->
+			</div>
+			</nav>
+		</div>
+	<div class="container-fluid" style="min-height:95%; ">
+		<div class="row">
+			  <div class="col-sm-2">
+				  <br>
+				  <center>
+					<img src="{% static 'personal/img/profile.jpg' %}" class="responsive-img" style='max-height:100px;' alt="face">
+				  </center>
+			  </div>
+			  <div class="col-sm-10">
+				  <br>
+				  <center>
+				  <h3>黑客与画家</h3>
+				  </center>
+			  </div>
+		</div><hr>
+
+		<div class="row">
+		  <div class="col-sm-2">
+		  <br>
+
+		  <br>
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+			  <ul class="nav nav-pills nav-stacked">
+				<li><a href='/'>Home</a></li>
+				<li><a href='/blog/'>Blog</a></li>
+				<li><a href='/contact/'>Contact</a></li>
+			  </ul>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+		  <div class="col-sm-10">
+		  
+			<div class='container-fluid'>
+			<br><br>
+			   {% block content %}
+			   {% endblock %}	
+			</div>
+		  </div>
+		</div> 
+	</div>
+	<!--<footer>
+		<div class="container-fluid" style='margin-left:15px'>
+			<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
+		</div>
+	</footer>	-->
+	<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">You've reached the end!</h5>
+                
+                <p class="grey-text text-lighten-4">Contact:1048157315@qq.com </p>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#">Support this Website!</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/shenhengheng/">Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://plus.google.com/+heng960509">Google+</a></li>
+                </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h6 class="white-text">友情链接:</h6>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="http://blog.shenhengheng.xyz">Blog</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://data.shenhengheng.xyz">Data Science Blog</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://Iotppt.shenhengheng.xyz">IoT Materials</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--<a href="https://xkcd.com/353/" target='blank'><p class="grey-text right" style='padding-right:10px'>Programming is a superpower.</p></a>-->
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 shenhengheng.xyz
+            
+            </div>
+
+          </div>
+        </footer>
+	<script>
+			$(document).ready(function(){
+				$(".button-collapse").sideNav();
+				$('.modal-trigger').leanModal();
+				$('.collapsible').collapsible({
+				  accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+				});
+				$('#aside').pushpin({ top:110, bottom:500 });
+		  });
+		</script>
+		<script>
+		  $(document).ready(function(){
+			$('.collapsible').collapsible({
+			  accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+			});
+			$('select').material_select();
+		  });
+	  </script>
+	  <script>
+		function goBack() {
+			window.history.back()
+		}
+	</script>	
+</body>
+
+</html>
