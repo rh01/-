@@ -5,3 +5,4 @@ Markdown==2.6.8
 packaging==16.8
 pyparsing==2.2.0
 six==1.10.0
+django-markdown-deux==1.0.5
