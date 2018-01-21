@@ -25,7 +25,7 @@ SECRET_KEY = 'wv4g&nmnfb208+!*6nd3!%ol!6_!%6iftnbux2l*+m#a%ritj%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["shenhengheng.xyz","172.93.43.72"]
+ALLOWED_HOSTS = ["capstone.readailib.com","45.78.41.34"]
 
 
 # Application definition
